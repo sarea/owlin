@@ -1,0 +1,43 @@
+<div class="container">
+    <div class="col-md-6">
+        <div class="panel panel-default">
+            <div class="panel-heading helpme-heading"><strong>Login</strong></div>
+            <div class="helpme-body panel-body">
+                <form class="form-font" ng-submit="vm.login()">
+                    <div class="form-group">
+                        <label>Email address</label>
+                        <input type="email" class="form-control" ng-model="vm.login.user.email">
+                    </div>
+                    <div class="form-group">
+                        <label>Password</label>
+                        <input type="password" class="form-control" ng-model="vm.login.user.pwd">
+                    </div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+	<div class="col-md-6">
+		<div class="panel panel-default ">
+			<div class="panel-heading helpme-heading"><strong>Register</strong></div>
+			<div class="panel-body ">
+				<form name="register" ng-submit="vm.register()">
+					<div class="form-group ">
+						<span><strong>First Name</strong></span>
+						<input type="text " class="form-control register-form" ng-model="vm.user.name " required />
+					</div>
+					<div class="form-group ">
+						<span><strong>Email Adress</strong></span>
+						<input type="email " class="form-control" ng-model="vm.user.email "
+						required placeholder="required "/>
+					</div>
+					<div class="form-group">
+						<span><strong>Password</strong></span>
+						<input type="password" class="form-control" name="pwd" ng-model="vm.user.pwd" required>
+					</div>
+                    <button type="submit" class="btn btn-default">Submit</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
